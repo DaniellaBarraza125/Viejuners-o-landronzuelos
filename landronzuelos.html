@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denuncia perdida</title>
+</head>
+<body>
+  <form>
+    <fieldset>
+       <legend><b>Fecha y hora</b></legend>
+       <p>Por favor trata de recordar con la mayor exactitud posible cuando desaparecio tu bicicleta</p>
+        <label for="date">Fecha</label>
+            <input type="date" id="date" name="date" required tabindex="1" autofocus> <br>
+        <label for="time">Hora</label>
+            <input type="time" id="time" name="time" required tabindex="2">
+    </fieldset>
+    <fieldset>
+        <legend><b>Caracteristicas de la bicicleta</b></legend>
+            <label for="color">Recuerdas el color de tu bicicleta?</label>
+                <input type="color" name="color" id="color"> <br>
+        <p>Indicanos la gama de tu bicicleta. Siendo 0 para gama baja y 10 para gama alta (bicicletas profesionales)</p>
+        <label for="range">Gama</label>
+            <input type="range" id="range" name="range" min="0" max="10">
+           <p><label for="marca">Elige la marca de tu bicicleta:</label>
+                 <input list="marcalist" name="marca" id="marca">
+                    <datalist id="marcalist">
+                        <option value="specialized">
+                        <option value="trek">
+                        <option value="merida">
+                        <option value="scott">
+                        <option value="giant">
+                        <option value="cube">
+                        <option value="lapierre">
+                        <option value="orbea">
+                        <option value="cannondale">
+                        <option value="bmc">
+                        <option value="canyon">
+                        <option value="look">
+                        <option value="protek">
+                        <option value="megamo">
+                        <option value="pinarello">
+                        <option value="bianchi">
+                        <option value="bh">
+                        <option value="factor">
+                        <option value="ghost">
+                        <option value="cervélo">
+                        <option value="argon">
+                    </datalist></p>
+        
+       <p>
+       <label for="type">Por favor, elige tu tipo de bicicleta:</label>
+            <select name="type" id="type">
+                <optgroup label="Paseo"> 
+                    <option value="señorial">Señorial</option>
+                    <option value="Anti-plebeyos">Anti-plebeyos</option>
+                    <option value="PorEncimaDelHombr">PorEncimaDelHombr</option>
+                </optgroup>
+                <optgroup label="Montaña"> 
+                    <option value="Gamusinos">Gamusinos</option>
+                    <option value="Hueleflores premium">Hueleflores premium</option>
+                    <option value="Fango lover">Fango lover</option>
+                </optgroup>
+                <optgroup label="Carreras"> 
+                    <option value="Metroymedio">Metroymedio</option>
+                    <option value="3 de la tarde. Fluorescente edition">3 de la tarde. Fluorescente edition</option>
+                    <option value="Grupitors">Grupitors</option>
+                </optgroup>
+            </select></p>
+        <p><label for="accesorios">Selecciona los accesorios que tenia tu bicicleta:</label><br>
+            <select name="accesorios" id="accesorios" multiple required>
+                <option value="Ruedines">Ruedines</option>
+                <option value="Pegatinas">Pegatinas</option>
+                <option value="Cestita">Cestita</option>
+                <option value="Bomba de aire">Bomba de aire</option>
+                <option value="Timbre">Timbre</option>
+                <option value="Foco">Foco</option>
+                <option value="sin accesorios">Sin accesorios</option>
+            </select></p>
+
+    </fieldset>
+    <input type="submit">
+    <input type="reset">
+
+
+  </form>
+</body>
+</html>

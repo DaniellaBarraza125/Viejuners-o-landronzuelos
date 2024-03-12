@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomulario viejune</title>
+</head>
+<body>
+    <header>
+        <h1>Formulario Viejune</h1>
+    </header>
+    <main>
+        <form action="viejune">
+            <fieldset>
+                <legend>Datos personales</legend>
+                    <label for="Name">Nombre</label> 
+                        <input type="text" autofocus id="Name" class="Name" placeholder="Escribe tu nombre" tabindex="1" required>
+                    <label for="Lastname">Apellidos</label>
+                        <input type="text"  id="Lastname" name="Lastname" placeholder="Primer apellido" tabindex="2" required>
+                    <label for="Lastname"></label>
+                        <input type="text" id="Lastname" name="Lastname" placeholder="Segundo apellido" tabindex="3"required> <br>
+                    <label for="age" id="age" name="age">Edad</label>
+                        <input type="number" tabindex="4" required>
+                    <label for="genero" id="genero" class="genero" tabindex="5">Genero</label>
+                        <input type="radio" name="genero" id="Fem" required ><label for="genero" value=" Fem">Fem</label>
+                        <input type="radio" name="genero" id="masc" required><label for="genero" value="masc">Masc</label>
+                        <input type="radio" name="genero" id="no-binario" required><label for="genero" value="no-binario" >No binario</label><br>
+            </fieldset>
+            <fieldset>
+                <legend>¿Me siento viejune?</legend>
+                <label for="viejune"></label>
+                    <input type="radio" id="viejune" name="viejune"  tabindex="8" required> <label for="viejune" value="si" id="viejune-si" name="viejune-si">si</label>
+                    <input type="radio" id="viejune" name="viejune"  tabindex="9"> <label for="viejune" value="no" id="viejune-no" name="viejune-no">no</label><br>
+                <p>
+                    <label for="about-you" id="about-you" name="about-you">Hablanos de ti</label>
+                </p>
+                     <textarea name="about-you" id="about-you" cols="30" rows="5" maxlength="200" required tabindex="10" placeholder="¿Porqué te sientes (o no) un viejune?"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Datos de contacto</legend>
+                    <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required tabindex="11" placeholder="tu email"><br>
+                    <label for="tel">Numero de telefono </label>
+                    <input type="text" pattern="\+\d{2}\d{10}" title="Por favor ingrese un número de teléfono válido con código de área y 10 dígitos." required>
+
+            </fieldset>
+        <input type="submit">  
+        <input type="reset">
+    </main>
+</body>
+</html>
